@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--LandingController-->
+        <scene sceneID="VTG-Ci-RFw">
+            <objects>
+                <controller title="LandingController" id="Gpw-1E-xBM" customClass="LandingController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" id="gM8-pL-AfJ"/>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="gM8-pL-AfJ" id="ko2-JJ-up5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-462" y="-137"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FitnessApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="JQi-pc-db3">
+                            <items>
+                                <label width="136" height="41" alignment="center" text="StoryCise" textAlignment="center" id="6td-VY-fS8">
+                                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="34"/>
+                                </label>
+                                <button width="80" height="80" alignment="center" backgroundImage="Play" id="we6-Kf-sUw">
+                                    <connections>
+                                        <segue destination="g9m-Bx-uE3" kind="push" id="3LY-KL-wZY"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="UVz-qf-YuR">
+                            <items>
+                                <button alignment="right" backgroundImage="Friends" id="IXx-aF-6tw">
+                                    <connections>
+                                        <segue destination="iUR-qu-6PC" kind="push" id="v11-9A-zRB"/>
+                                    </connections>
+                                </button>
+                                <button alignment="left" backgroundImage="Leaderboard" id="vCw-oT-bLe">
+                                    <connections>
+                                        <segue destination="Loz-Rk-LYW" kind="push" id="HuT-Mk-bc7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-92" y="286"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="E9Y-d0-WmY">
+            <objects>
+                <controller id="US9-7x-F92">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="uh2-aE-0fp">
+                            <items>
+                                <label alignment="center" text="Mission" id="J5H-dx-dba">
+                                    <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                                <label alignment="center" text="Defeat the Hydra" id="kXr-Iz-gFv">
+                                    <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                                </label>
+                                <button width="80" height="80" alignment="center" backgroundImage="Play" id="oKZ-XI-f2y">
+                                    <connections>
+                                        <segue destination="RtH-Um-8fp" kind="push" id="NBy-3s-8Hg"/>
+                                    </connections>
+                                </button>
+                                <label alignment="center" text="Estimate: 30min" id="m9E-X7-5mE">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="689" y="287"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="HUY-6y-cnO">
+            <objects>
+                <controller id="dwj-M3-dqO">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="sjD-T8-c3X">
+                            <items>
+                                <label alignment="center" text="No headphones" id="8Hq-jz-Nbi">
+                                    <fontDescription key="font" type="system" pointSize="19"/>
+                                </label>
+                                <label alignment="center" text="Please connect your device" numberOfLines="2" id="cWf-q0-rhK"/>
+                                <button alignment="center" title="Connect" id="ukD-Gg-2M7">
+                                    <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="325" y="-94"/>
+        </scene>
+        <!--Select Story Controller-->
+        <scene sceneID="xsY-J2-lBy">
+            <objects>
+                <controller id="g9m-Bx-uE3" customClass="SelectStoryController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="qsg-pI-23q">
+                            <items>
+                                <label alignment="center" text="Stories" textAlignment="center" id="OEo-hK-Mcw">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="34"/>
+                                </label>
+                                <table alignment="center" id="4mn-EL-m6k"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Hercules" id="9tm-PB-E3d">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="US9-7x-F92" kind="push" id="53z-cf-oFj"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Harry potter" id="pgT-oF-QH8">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="GlT-2n-FST" kind="push" id="jyr-6W-d7m"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Star wars" id="9fk-3a-uu3">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="GlT-2n-FST" kind="push" id="MRd-WV-fDP"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="311" y="285"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="25" y="1073"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="FitnessApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="1073"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="FitnessApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="739"/>
+        </scene>
+        <!--Hint Controller-->
+        <scene sceneID="y3O-ew-1Pv">
+            <objects>
+                <controller id="RtH-Um-8fp" customClass="HintController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Hint" id="OYR-cZ-gge">
+                            <color key="textColor" red="0.38949144619999998" green="0.76139491579999996" blue="0.39704358309999999" alpha="0.76942121480000003" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="center" text="For the best experience, play with notification sounds off. " textAlignment="center" numberOfLines="7" id="plI-0Z-QIV"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="963" y="-137"/>
+        </scene>
+        <!--Run-->
+        <scene sceneID="hAA-vc-KV7">
+            <objects>
+                <controller identifier="Run" title="Run" id="Sbx-25-qep" customClass="RunController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label width="82" height="40" alignment="center" alpha="0.84999999999999998" text="Run" textAlignment="center" id="KAG-4W-Zo0">
+                            <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="27"/>
+                        </label>
+                        <group alignment="center" verticalAlignment="center" layout="overlap" id="q31-rQ-IOq">
+                            <items>
+                                <group width="1" alignment="center" verticalAlignment="center" id="iSY-ha-LtV">
+                                    <items>
+                                        <label alignment="center" hidden="YES" text="Info" id="xIT-OJ-wE9"/>
+                                        <label alignment="center" verticalAlignment="center" text="04" id="LnB-i9-mn5">
+                                            <accessibilityTraits key="accessibilityTraits" none="YES"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="center" text=":" id="Xr9-W4-R0e"/>
+                                        <label width="21" height="21" alignment="center" verticalAlignment="center" text="00" id="vRs-mm-mrP">
+                                            <accessibilityTraits key="accessibilityTraits" none="YES"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <imageView alignment="left" image="min0" id="PWN-50-ppZ"/>
+                                <imageView alignment="center" verticalAlignment="center" image="sec0" id="hbK-Nc-pQb"/>
+                            </items>
+                        </group>
+                        <button width="94" height="26" alignment="center" title="Skip" id="fyW-Nj-ZB0">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="hff-gW-Dvm" kind="push" id="Evw-8y-nwM"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="Info" destination="xIT-OJ-wE9" id="SgE-Rd-n22"/>
+                        <outlet property="Tmin" destination="LnB-i9-mn5" id="xoW-qq-gwj"/>
+                        <outlet property="Tsec" destination="vRs-mm-mrP" id="AUa-Hc-JDd"/>
+                        <outlet property="min" destination="PWN-50-ppZ" id="CA7-iu-FY5"/>
+                        <outlet property="pointers" destination="Xr9-W4-R0e" id="jTp-Zi-b04"/>
+                        <outlet property="sec" destination="hbK-Nc-pQb" id="HXx-cP-Y5M"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="950" y="654.5"/>
+        </scene>
+        <!--SurpriseSpear-->
+        <scene sceneID="Ra5-0O-nx6">
+            <objects>
+                <controller identifier="SurpriseSpear" id="Xsa-ve-n1X" customClass="SurpriseSpearController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="I3b-gZ-Ddr">
+                            <items>
+                                <label alignment="center" text="Surprise" id="q5X-6S-jvp">
+                                    <color key="textColor" red="0.38949144619999998" green="0.76139491579999996" blue="0.39704358309999999" alpha="0.76942121480000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                                <label width="136" alignment="center" text="Athena Spear" textAlignment="center" id="u2t-nW-eLt"/>
+                            </items>
+                        </group>
+                        <group width="113" height="127" alignment="center" verticalAlignment="center" radius="50" id="26f-Mv-E8E">
+                            <items>
+                                <button alignment="left" backgroundImage="AthenaSpear" id="hrt-g9-nWx">
+                                    <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Claim " id="xuE-pv-bPL">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="next" destination="Xsa-ve-n1X" id="pSz-7Q-wOW"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="621" y="1485"/>
+        </scene>
+        <!--HerculesPreRun-->
+        <scene sceneID="RLP-yj-eRl">
+            <objects>
+                <controller identifier="HerculesPreRun" id="5ZJ-Wq-NWG" customClass="PreRunController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="120" alignment="center" alpha="0.34999999999999998" text="(Distant growling)" textAlignment="center" numberOfLines="5" id="a7o-UM-pKO">
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Run" id="Bgv-Iz-u0T">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="next" destination="5ZJ-Wq-NWG" id="Uyh-i5-W97"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnRun" destination="Bgv-Iz-u0T" id="EiR-Cb-Pfw"/>
+                        <outlet property="lblSubtitles" destination="a7o-UM-pKO" id="3TI-Cr-Xdg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1347" y="254"/>
+        </scene>
+        <!--ThrowingSpearsScene-->
+        <scene sceneID="T7l-L6-Jgd">
+            <objects>
+                <controller identifier="ThrowingSpearsScene" id="7eZ-Tt-ffK" customClass="ThrowSpearsController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="mCr-9U-d0M">
+                            <items>
+                                <label alignment="center" text="Spear Hit" id="j9Z-sN-yJd">
+                                    <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="61" height="61" alignment="center" verticalAlignment="center" radius="31" id="mlc-EJ-YIn">
+                            <items>
+                                <button width="52" height="36" alignment="left" verticalAlignment="center" backgroundImage="spear" id="vZk-31-dHp">
+                                    <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" pointSize="16"/>
+                                    <connections>
+                                        <action selector="throwSpear" destination="7eZ-Tt-ffK" id="F9r-Ye-XlI"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </group>
+                        <label width="136" height="58" alignment="center" verticalAlignment="bottom" text="0" textAlignment="center" id="G4F-6u-QN1">
+                            <fontDescription key="font" type="system" pointSize="52"/>
+                        </label>
+                        <group width="1" height="87" alignment="center" verticalAlignment="bottom" hidden="YES" id="Xns-u2-cZG">
+                            <items>
+                                <label alignment="center" hidden="YES" alpha="0.10000000000000001" text="Hit!" textAlignment="center" id="yiX-Ep-Q24">
+                                    <color key="textColor" red="0.33454322469999997" green="0.91978199599999999" blue="0.22236761059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                                <group width="2" height="2" alignment="center" verticalAlignment="center" id="ocT-A4-GKK"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bottomGroup" destination="ocT-A4-GKK" id="6gY-kg-eNU"/>
+                        <outlet property="hitGroup" destination="Xns-u2-cZG" id="KaU-v9-aOc"/>
+                        <outlet property="lblCount" destination="G4F-6u-QN1" id="Zu0-ts-dS6"/>
+                        <outlet property="lblHit" destination="yiX-Ep-Q24" id="gUy-qd-m6Z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1181" y="1443"/>
+        </scene>
+        <!--WarningScene-->
+        <scene sceneID="m89-hx-ldV">
+            <objects>
+                <controller identifier="WarningScene" id="BMU-bu-WYc" customClass="WarningController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="53" alignment="left" id="CH0-Ug-2Dj">
+                            <items>
+                                <group width="2" height="48" alignment="left" id="SZ8-JS-cH4"/>
+                                <label width="115" height="47" alignment="center" verticalAlignment="center" text="Warning" textAlignment="center" numberOfLines="4" id="lxN-SM-0EI">
+                                    <color key="textColor" red="1" green="0.32148119918923468" blue="0.08273097203570412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                                <group width="2" height="48" alignment="right" id="dxf-t1-RdX"/>
+                            </items>
+                        </group>
+                        <label width="136" height="30" alignment="center" text="Hydra incoming! " textAlignment="center" numberOfLines="2" minimumScaleFactor="0.90000000000000002" id="ox7-cE-KG2">
+                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                        <label alignment="center" text="Choose a move" textAlignment="center" id="jHr-uo-ag7"/>
+                        <label alignment="center" id="Nok-Ub-7Ga">
+                            <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <group width="136" height="84" alignment="center" verticalAlignment="bottom" id="ZNF-5D-iwD">
+                            <items>
+                                <group width="135" height="72" alignment="center" verticalAlignment="center" id="c0u-6j-Fcv">
+                                    <items>
+                                        <group width="61" height="68" alignment="left" verticalAlignment="center" radius="29" id="OCF-0L-8dc">
+                                            <items>
+                                                <button alignment="left" verticalAlignment="bottom" backgroundImage="Squats" id="N2x-2n-w6y">
+                                                    <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="4" alignment="center" verticalAlignment="center" id="9Pt-gR-1oO"/>
+                                        <group width="61" height="68" alignment="right" verticalAlignment="bottom" radius="29" id="U0Q-na-qOm">
+                                            <items>
+                                                <button width="1" alignment="center" backgroundImage="jumpingJacks" id="vrb-QM-21A">
+                                                    <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <connections>
+                                                        <segue destination="KP7-XZ-Lre" kind="push" id="NxW-Dr-o13"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="leftGroup" destination="SZ8-JS-cH4" id="aSa-ic-arB"/>
+                        <outlet property="rightGroup" destination="dxf-t1-RdX" id="MVf-7h-hnR"/>
+                        <outlet property="timelbl" destination="Nok-Ub-7Ga" id="ENU-Ob-Tau"/>
+                        <outlet property="warningLabel" destination="lxN-SM-0EI" id="1LM-2k-5L1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2120" y="1627"/>
+        </scene>
+        <!--DodgeHydraScene-->
+        <scene sceneID="EU6-zy-8IC">
+            <objects>
+                <controller identifier="DodgeHydraScene" id="KP7-XZ-Lre" customClass="DodgeHydraController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" id="xZi-V0-wft"/>
+                        <group width="61" height="61" alignment="center" verticalAlignment="center" radius="28" id="6ca-qX-4he">
+                            <items>
+                                <button width="34" height="34" alignment="center" verticalAlignment="center" backgroundImage="JumpingJackTransp" id="Iob-Ai-Rqy">
+                                    <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="DoAJumpingJack" destination="KP7-XZ-Lre" id="apK-QW-4TF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </group>
+                        <group width="1" height="53" alignment="left" id="zt7-FN-pq8">
+                            <items>
+                                <group width="2" height="48" alignment="left" id="Vks-Kl-DMZ"/>
+                                <label width="135" height="47" alignment="center" text="Avoid the Hydra!" textAlignment="center" numberOfLines="4" id="cpr-tL-X8y">
+                                    <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="18"/>
+                                </label>
+                                <group width="2" height="48" alignment="right" id="zjy-gi-pAf"/>
+                            </items>
+                        </group>
+                        <label alignment="center" verticalAlignment="bottom" text="0" textAlignment="center" id="li3-no-k8t">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                        </label>
+                        <group width="1" height="87" alignment="center" verticalAlignment="bottom" hidden="YES" id="VSi-3E-NNU">
+                            <items>
+                                <label alignment="center" alpha="0.10000000000000001" text="Dodged! " textAlignment="center" id="aDd-2U-C13">
+                                    <color key="textColor" red="0.33454322468719278" green="0.91978199602122013" blue="0.22236761059631638" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                                <group width="2" height="2" alignment="center" verticalAlignment="center" id="ubg-GE-QMp"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bottomGroup" destination="ubg-GE-QMp" id="kUR-S0-gEk"/>
+                        <outlet property="dodgeGroup" destination="VSi-3E-NNU" id="6tj-m9-W2u"/>
+                        <outlet property="lblCount" destination="li3-no-k8t" id="uu4-Fm-EiM"/>
+                        <outlet property="lblDodged" destination="aDd-2U-C13" id="pQF-SL-kfh"/>
+                        <outlet property="lblTimer" destination="xZi-V0-wft" id="X79-U9-EPb"/>
+                        <outlet property="leftGroup" destination="Vks-Kl-DMZ" id="f0K-dE-v3N"/>
+                        <outlet property="rightGroup" destination="zjy-gi-pAf" id="5X5-M0-7H5"/>
+                        <outlet property="warningLabel" destination="cpr-tL-X8y" id="07R-vO-YnQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2136" y="2166"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="fHp-nt-L5E">
+            <objects>
+                <controller id="8oB-TS-N6Y">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="59J-xg-KaZ">
+                            <items>
+                                <label alignment="center" text="Get Ready" id="nIl-V0-Kjd">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="27"/>
+                                </label>
+                                <label width="118" alignment="center" text="   For Punching" id="2Iw-8o-y7A"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="N3a-qT-u0W"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2321" y="1279"/>
+        </scene>
+        <!--PunchingScene-->
+        <scene sceneID="fBs-kD-XH4">
+            <objects>
+                <controller identifier="PunchingScene" id="2vs-Sv-xEP" customClass="ExerciseController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="4Fq-tL-hzR">
+                            <items>
+                                <label width="136" alignment="center" text="Punch The Hydra!" textAlignment="center" numberOfLines="2" id="c3H-ac-WOn">
+                                    <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="20"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="61" height="61" alignment="center" verticalAlignment="center" radius="28" id="l2b-Nt-Gc5">
+                            <items>
+                                <button width="34" height="34" alignment="center" verticalAlignment="center" backgroundImage="Fist" id="DGH-PX-bj8">
+                                    <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <action selector="Punch" destination="2vs-Sv-xEP" id="v7D-DL-sm4"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </group>
+                        <label width="136" height="58" alignment="center" verticalAlignment="bottom" text="5" textAlignment="center" id="vSo-rG-JXY">
+                            <fontDescription key="font" type="system" pointSize="52"/>
+                        </label>
+                        <group width="1" height="87" alignment="center" verticalAlignment="bottom" hidden="YES" id="WLm-Ya-I1p">
+                            <items>
+                                <label alignment="center" hidden="YES" alpha="0.10000000000000001" text="Hit!" textAlignment="center" id="2cW-Zo-zuR">
+                                    <color key="textColor" red="0.33454322469999997" green="0.91978199599999999" blue="0.22236761059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                                </label>
+                                <group width="2" height="2" alignment="center" verticalAlignment="center" id="e3K-xA-0lI"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="bottomGroup" destination="e3K-xA-0lI" id="2Ag-Te-GrF"/>
+                        <outlet property="hitGroup" destination="WLm-Ya-I1p" id="OX5-8m-pPb"/>
+                        <outlet property="lbCounter" destination="vSo-rG-JXY" id="cvs-dz-riR"/>
+                        <outlet property="lblHit" destination="2cW-Zo-zuR" id="nEF-GK-gr7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2830" y="2238"/>
+        </scene>
+        <!--SuccesScene-->
+        <scene sceneID="DeU-iS-FFQ">
+            <objects>
+                <controller identifier="SuccesScene" id="BqY-8S-1NZ">
+                    <items>
+                        <group width="1" height="82" alignment="left" layout="vertical" id="bei-Sz-diI">
+                            <items>
+                                <label alignment="center" text="Success" id="2Al-RT-NED">
+                                    <color key="textColor" red="0.39167756199999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                                <label width="136" height="31" alignment="center" text="Hydra killed" textAlignment="center" id="ErV-81-hJy">
+                                    <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="136" height="31" alignment="center" text="+300 XP" textAlignment="center" minimumScaleFactor="0.90000000000000002" id="7Dn-7k-iIQ">
+                            <color key="textColor" red="0.39167756199999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <button width="1" alignment="left" title="Continue" id="N3r-F1-cJK">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="e6u-e8-b5R" kind="push" id="dyp-Ek-M4D"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2000" y="672"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="QRn-se-eeq">
+            <objects>
+                <controller id="tFj-g1-9CF">
+                    <items>
+                        <button width="136" height="36" alignment="left" title="Run" id="cQL-Aq-Haq">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" pointSize="29"/>
+                        </button>
+                        <group width="134" height="23" alignment="left" layout="vertical" id="otb-ae-4Je">
+                            <items>
+                                <label width="136" height="31" alignment="center" text="timer: 10 min" id="9f9-tM-bNe"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="rZS-To-uay"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1706" y="387"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="mRS-AI-sfO">
+            <objects>
+                <controller id="e6u-e8-b5R">
+                    <items>
+                        <group width="1" height="82" alignment="left" layout="vertical" id="Py1-6X-bwW">
+                            <items>
+                                <label alignment="center" text="Success" id="7fD-xS-0os">
+                                    <color key="textColor" red="0.39167756199999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                                </label>
+                                <label width="136" height="31" alignment="center" text="Story Compeleted" textAlignment="center" id="6Ef-Nb-gew">
+                                    <fontDescription key="font" type="italicSystem" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="136" height="53" alignment="center" text="Personal Records" textAlignment="center" numberOfLines="2" id="7kk-ax-OlO">
+                            <color key="textColor" red="0.33454322469999997" green="0.91978199599999999" blue="0.22236761059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="20"/>
+                        </label>
+                        <label width="136" height="25" alignment="center" text="Punching record" textAlignment="center" id="NlN-5R-k5O"/>
+                        <label width="136" height="25" alignment="center" text="5 Reps" textAlignment="center" id="6i6-ER-n4U">
+                            <color key="textColor" red="0.39167756199999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label width="136" height="25" alignment="center" text="Running record" textAlignment="center" id="jeY-fn-f4E"/>
+                        <label width="136" height="25" alignment="center" text="1 KM" textAlignment="center" id="UwG-Yc-Dio">
+                            <color key="textColor" red="0.39167756199999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <button width="1" alignment="left" title="Confirm" id="RST-7G-uTu">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="a2I-ho-VL2" kind="push" id="9R8-zB-TM9"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2314" y="625"/>
+        </scene>
+        <!--Confirm-->
+        <scene sceneID="GT6-3K-qfP">
+            <objects>
+                <controller title="Confirm" id="a2I-ho-VL2">
+                    <items>
+                        <group width="1" height="82" alignment="left" layout="vertical" id="TRc-za-u2M">
+                            <items>
+                                <label alignment="center" text="Reward" id="3JM-Ix-rPc">
+                                    <color key="textColor" red="0.39167756199999998" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" pointSize="32"/>
+                                </label>
+                                <label width="136" height="31" alignment="center" text="New Story unlocked" minimumScaleFactor="0.69999999999999996" id="1UL-5u-axi"/>
+                            </items>
+                        </group>
+                        <button width="81" height="119" alignment="center" backgroundImage="Zeus" id="45H-OG-s2U">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </button>
+                        <button width="1" alignment="left" title="Confirm" id="FnL-RP-fXN">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="g9m-Bx-uE3" kind="push" id="cSU-1P-uwr"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2632" y="-137"/>
+        </scene>
+        <!--Select Story Controller-->
+        <scene sceneID="Weg-TN-4oY">
+            <objects>
+                <controller id="fS9-6U-vNO" customClass="SelectStoryController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="WnE-ft-Npa">
+                            <items>
+                                <label alignment="center" text="Friends" id="nUJ-Vy-UEn">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="34"/>
+                                </label>
+                                <table alignment="center" id="QfT-jR-Wdr">
+                                    <items>
+                                        <tableRow id="g3V-ph-afO">
+                                            <group key="rootItem" width="1" alignment="left" id="4HP-OA-haw">
+                                                <items>
+                                                    <label alignment="left" text="John Doe" id="gi8-Af-Qb1"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                        <tableRow id="tfZ-qc-dAy">
+                                            <group key="rootItem" width="1" alignment="left" id="Gup-F2-uLN">
+                                                <items>
+                                                    <label alignment="left" text="John Doe" id="eKa-aR-ywF"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                        <tableRow id="jGh-A1-mpx">
+                                            <group key="rootItem" width="1" alignment="left" id="NpL-JQ-zjo">
+                                                <items>
+                                                    <label alignment="left" text="John Doe" id="2kJ-rh-ACh"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-559" y="275"/>
+        </scene>
+        <!--Leaderboards-->
+        <scene sceneID="xZn-H9-V6u">
+            <objects>
+                <controller identifier="Leaderboards" id="Loz-Rk-LYW" customClass="SelectStoryController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="bK2-3F-Gyc">
+                            <items>
+                                <label alignment="center" text="Leaderboards" id="LzV-rQ-rIX">
+                                    <fontDescription key="font" type="system" pointSize="20"/>
+                                </label>
+                                <table alignment="center" id="sEr-dM-NpD">
+                                    <items>
+                                        <tableRow id="qPR-tp-QWO">
+                                            <group key="rootItem" width="1" alignment="left" id="xeL-Sn-oKa">
+                                                <items>
+                                                    <label alignment="left" text="John Doe" id="zv3-4f-C6g"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                        <tableRow id="0k7-Uk-V56">
+                                            <group key="rootItem" width="1" alignment="left" id="rBz-ty-KyA">
+                                                <items>
+                                                    <label alignment="left" text="John Doe" id="f17-HZ-iNZ"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                        <tableRow id="eX4-vU-MZm">
+                                            <group key="rootItem" width="1" alignment="left" id="xLf-Ub-Umn">
+                                                <items>
+                                                    <label alignment="left" text="John Doe" id="ILW-Tk-ydS"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-903" y="275"/>
+        </scene>
+        <!--Select Story Controller-->
+        <scene sceneID="JYo-95-z5S">
+            <objects>
+                <controller id="GlT-2n-FST" customClass="SelectStoryController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="134" alignment="left" layout="vertical" id="3pT-cF-GOQ">
+                            <items>
+                                <label alignment="center" text="Story" id="Wm8-uj-u64">
+                                    <fontDescription key="font" type="boldSystem" pointSize="34"/>
+                                </label>
+                                <table alignment="center" id="PhT-Rk-8ed"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="center" backgroundImage="GreenLock" id="H7O-n1-FgJ">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </button>
+                        <button width="1" alignment="left" title="Unlock to play" id="6tr-Xx-jUh">
+                            <color key="backgroundColor" red="0.76744656735751293" green="0.13923433953291975" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="g9m-Bx-uE3" kind="push" id="4V4-PA-w57"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-206" y="710.5"/>
+        </scene>
+        <!--Introduction-->
+        <scene sceneID="T74-FN-ifm">
+            <objects>
+                <controller identifier="Introduction" title="Introduction" fullScreen="YES" id="WQk-CW-d8f" customClass="IntroductionController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" id="Qzr-c5-hmR">
+                            <items>
+                                <group width="120" height="143" alignment="center" verticalAlignment="center" alpha="0.29999999999999999" backgroundImage="1.HerculesSin" contentMode="redraw" radius="58" id="DtL-Et-2qg"/>
+                            </items>
+                        </group>
+                        <label width="136" alignment="center" verticalAlignment="bottom" alpha="0.25" text="To atone for his sins.." textAlignment="center" numberOfLines="3" id="X7J-Th-kbR">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <button width="94" height="26" alignment="center" hidden="YES" title="Skip" id="Rw2-1p-0O3">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="5ZJ-Wq-NWG" kind="push" identifier="FromIntroToPreRun" id="Olj-0g-M5n"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="imageViewer" destination="DtL-Et-2qg" id="Z7P-7A-2Lf"/>
+                        <outlet property="txtSubtitles" destination="X7J-Th-kbR" id="fZm-WJ-biA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1029" y="248"/>
+        </scene>
+        <!--Sensors Controller-->
+        <scene sceneID="ycH-IT-I5D">
+            <objects>
+                <controller id="iUR-qu-6PC" customClass="SensorsController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label height="23" alignment="left" text="Not Recording" textAlignment="center" id="sGF-cZ-l7G" userLabel="Status">
+                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label width="106" alignment="left" text="Gravity" id="Gfz-hr-Yfu" userLabel="Gravity"/>
+                        <label width="136" alignment="left" text="0" id="dfG-f9-8dG" userLabel="GravityCount"/>
+                        <label alignment="left" text="User Acceleration" id="Joc-x6-t99" userLabel="UserAcceleration"/>
+                        <label width="136" height="19" alignment="left" text="0" id="s0T-93-Iff" userLabel="UserAccelerationCount"/>
+                        <label alignment="left" text="Rotation" id="SsP-Vw-3td" userLabel="Rotation"/>
+                        <label width="136" alignment="left" text="0" id="l5D-XY-bCL" userLabel="RotationCount"/>
+                        <label alignment="left" text="Attitude" id="6ti-AB-0Kb" userLabel="Altitude"/>
+                        <label width="136" alignment="left" text="0" id="raF-ee-biv" userLabel="AltitudeCount"/>
+                    </items>
+                    <menu key="menu" id="MXD-Xn-7Oq">
+                        <items>
+                            <menuItem title="Start" icon="accept" id="503-8j-F1c">
+                                <connections>
+                                    <action selector="start" destination="iUR-qu-6PC" id="bHl-jL-jSc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Stop" icon="decline" id="2vR-mF-l3E">
+                                <connections>
+                                    <action selector="stop" destination="iUR-qu-6PC" id="14E-hK-8US"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="altitudeCountLabel" destination="raF-ee-biv" id="VqI-b7-1Sz"/>
+                        <outlet property="gravityCountLabel" destination="dfG-f9-8dG" id="aZQ-zo-Rq8"/>
+                        <outlet property="rotationCountLabel" destination="l5D-XY-bCL" id="0uy-qA-oIA"/>
+                        <outlet property="statusLabel" destination="sGF-cZ-l7G" id="Xkd-Bu-TH4"/>
+                        <outlet property="userAccelerationCountLabel" destination="s0T-93-Iff" id="m00-EO-fW1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-75" y="-137"/>
+        </scene>
+        <!--RunTest-->
+        <scene sceneID="BNz-qf-AP4">
+            <objects>
+                <controller identifier="RunTest" title="RunTest" fullScreen="YES" id="zEr-DW-IU1" customClass="RunController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label width="65" height="40" alignment="center" alpha="0.84999999999999998" text="Run" textAlignment="center" id="EsB-kt-Ank">
+                            <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="32"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="bottom" text="Walking Distance" id="akj-4M-Iyd">
+                            <color key="textColor" red="0.55986279250000004" green="0.8091298938" blue="0.40383780000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label width="112" height="21" alignment="center" verticalAlignment="bottom" text="Info" textAlignment="center" id="Ws0-qb-dcb">
+                            <color key="textColor" red="0.55986279250000004" green="0.8091298938" blue="0.40383780000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <group width="136" height="134" alignment="center" verticalAlignment="center" layout="overlap" id="52N-xZ-u8P">
+                            <items>
+                                <group width="1" alignment="center" id="xmD-X0-JEz">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="04" id="hve-5V-UOW">
+                                            <accessibilityTraits key="accessibilityTraits" none="YES"/>
+                                        </label>
+                                        <label alignment="center" verticalAlignment="center" text=":" id="HbG-y2-1yk"/>
+                                        <label alignment="center" verticalAlignment="center" text="00" id="uGE-bX-WnU">
+                                            <accessibilityTraits key="accessibilityTraits" none="YES"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <imageView alignment="left" image="min0" id="Tus-XT-HLh"/>
+                                <imageView alignment="center" verticalAlignment="center" image="sec0" id="Ou7-gq-rmL"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="Info" destination="Ws0-qb-dcb" id="7Fz-na-qOG"/>
+                        <outlet property="Tmin" destination="hve-5V-UOW" id="qkK-T9-d80"/>
+                        <outlet property="Tsec" destination="uGE-bX-WnU" id="XoS-rM-gbu"/>
+                        <outlet property="min" destination="Tus-XT-HLh" id="OB6-Z3-MSA"/>
+                        <outlet property="pointers" destination="HbG-y2-1yk" id="Wpv-oy-wBw"/>
+                        <outlet property="sec" destination="Ou7-gq-rmL" id="aTm-gg-rz6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="855" y="1464"/>
+        </scene>
+        <!--HerculesPostRun-->
+        <scene sceneID="cA4-t2-3dD">
+            <objects>
+                <controller identifier="HerculesPostRun" id="hff-gW-Dvm" customClass="PostRunController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="120" alignment="center" alpha="0.34999999999999998" text="(Distant growling)" textAlignment="center" numberOfLines="5" id="kCt-wg-3eV">
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                        <button width="110" height="35" alignment="center" verticalAlignment="bottom" title="Bait" id="Njk-8l-Jc9">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="Xsa-ve-n1X" kind="push" id="Nmq-o1-XE4"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnBait" destination="Njk-8l-Jc9" id="f4y-Mq-78t"/>
+                        <outlet property="lblSubtitles" destination="kCt-wg-3eV" id="8PN-5o-ZDx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1243" y="1007"/>
+        </scene>
+        <!--PostThrowingSpears-->
+        <scene sceneID="Rhj-Bu-jcf">
+            <objects>
+                <controller identifier="PostThrowingSpears" hidesWhenLoading="NO" id="Uh8-jb-rFF" customClass="PostThrowingSpearsController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="120" alignment="center" alpha="0.20000000000000001" text="Soldier: Watch out!" textAlignment="center" numberOfLines="5" id="F5M-OZ-Nl1">
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="lblSubtitles" destination="F5M-OZ-Nl1" id="D3n-hT-bO7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1821" y="1604"/>
+        </scene>
+        <!--Jumping Jacks Controller-->
+        <scene sceneID="l7S-DX-zoL">
+            <objects>
+                <controller id="aTq-3t-s9a" customClass="JumpingJacksController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="hZg-cO-eQb">
+                            <items>
+                                <label height="66" alignment="center" text="Jump jacks" numberOfLines="2" id="g1k-KX-P4l">
+                                    <fontDescription key="font" type="system" pointSize="27"/>
+                                </label>
+                                <label alignment="center" text="10" id="wfs-aS-nxM">
+                                    <fontDescription key="font" type="system" pointSize="52"/>
+                                </label>
+                                <button width="1" alignment="left" title="Reset" id="w2H-xf-7Dg">
+                                    <connections>
+                                        <action selector="btnResetOnClick" destination="aTq-3t-s9a" id="RUM-k3-Aim"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="lbCounter" destination="wfs-aS-nxM" id="YH5-B1-XS7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1531" y="1757"/>
+        </scene>
+        <!--NoChoiceDefeat-->
+        <scene sceneID="Olz-PN-aGx">
+            <objects>
+                <controller identifier="NoChoiceDefeat" id="nKm-rj-Fpg" customClass="GameOverController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="82" alignment="left" layout="vertical" id="bed-8T-J6s">
+                            <items>
+                                <label alignment="center" text="Game Over" id="1jQ-SC-UsH">
+                                    <color key="textColor" red="1" green="0.32148119920000001" blue="0.082730972040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="29"/>
+                                </label>
+                                <label width="136" height="31" alignment="center" text="The Hydra got you " id="Mr4-s0-9Es">
+                                    <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Try again" id="iu6-yN-EOX">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="BMU-bu-WYc" kind="push" id="PNb-x8-sB9"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2589" y="1724"/>
+        </scene>
+        <!--PrePunchScene-->
+        <scene sceneID="MLu-w1-bzq">
+            <objects>
+                <controller identifier="PrePunchScene" id="3hu-fT-Vcx" customClass="PrePunchController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="120" alignment="center" alpha="0.20000000000000001" text="(Hydra whimpers)" textAlignment="center" numberOfLines="5" id="Weg-47-0kD">
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                        <button width="1" alignment="left" title="Beat The Hydra" id="FWO-Jy-GwE">
+                            <color key="backgroundColor" red="0.16144966860000001" green="0.4122004534" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="2vs-Sv-xEP" kind="push" id="ubG-Yg-PYb"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnBeat" destination="FWO-Jy-GwE" id="uUl-RX-jEW"/>
+                        <outlet property="lblSubtitles" destination="Weg-47-0kD" id="NTe-zk-aH6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="2550" y="2238"/>
+        </scene>
+        <!--HydraDyingScene-->
+        <scene sceneID="xCk-B7-Kl4">
+            <objects>
+                <controller identifier="HydraDyingScene" id="M6W-Pd-Exx" customClass="VictoryController" customModule="FitnessApp_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="120" alignment="center" alpha="0.20000000000000001" text="(Hydra dying)" textAlignment="center" numberOfLines="5" id="HJg-fa-tal">
+                            <fontDescription key="font" type="italicSystem" pointSize="16"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="lblSubtitles" destination="HJg-fa-tal" id="NKf-Sf-dcw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="3157" y="2238"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.HerculesSin" width="600" height="383"/>
+        <image name="AthenaSpear" width="845" height="945"/>
+        <image name="Fist" width="600" height="520"/>
+        <image name="Friends" width="50" height="50"/>
+        <image name="GreenLock" width="512" height="512"/>
+        <image name="JumpingJackTransp" width="1200" height="1200"/>
+        <image name="Leaderboard" width="60" height="60"/>
+        <image name="Play" width="100" height="100"/>
+        <image name="Squats" width="540" height="594"/>
+        <image name="Zeus" width="323" height="476"/>
+        <image name="jumpingJacks" width="446" height="735"/>
+        <image name="min0" width="300" height="300"/>
+        <image name="sec0" width="300" height="300"/>
+        <image name="spear" width="512" height="363"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MRd-WV-fDP"/>
+        <segue reference="3LY-KL-wZY"/>
+    </inferredMetricsTieBreakers>
+</document>
